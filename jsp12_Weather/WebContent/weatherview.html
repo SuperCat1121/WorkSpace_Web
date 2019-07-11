@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src=js/jquery-3.4.1.min.js></script>
+<script type="text/javascript" src="js/weatherajax.js"></script>
+</head>
+<body>
+
+	<!-- apache -> xalan -> xalan java 2.7.2 -> download -> ... -->
+	
+	<h1>기상청이 제공하는 우리동네 날씨</h1>
+	<table border="1">
+		<tr>
+			<td colspan="8" bgcolor="skyblue"><b>지 역</b></td>
+		</tr>
+		<tr>
+			<td colspan="3">주소를 선택하세요
+				<select id="address">
+					<option value="1168064000">서울시 강남구 역삼1동</option>
+					<option value="1135062500">서울시 노원구 중계2,3동</option>
+					<option value="4146356000">경기도 용인시기흥구 구성동</option>
+					<option value="2826055000">인천광역시 서구 석남1동</option>
+				</select>
+			</td>
+			<td><input type="button" id="weaview" value="날씨보기"></td>
+		</tr>
+		<tr>
+			<td>좌 표</td>
+			<td colspan="3">
+				위도 : <input type="text" id="x" readonly="readonly">
+				경도 : <input type="text" id="y" readonly="readonly">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4" bgcolor="skyblue"><b>현 재 날 씨</b></td>
+		</tr>
+		<tr>
+			<td>기준시간</td>
+			<td colspan="2"><input type="text" id="pubDate" size="50%" readonly="readonly"></td>
+			<td rowspan="5" align="center"><img src="" id="weather_img" width="150" height="150"></td>
+		</tr>
+		<tr>
+			<td>날 씨</td>
+			<td colspan="2"><input type="text" id="wfKor" readonly="readonly"></td>
+		</tr>
+		<tr>
+			<td>기 온</td>
+			<td colspan="2"><input type="text" id="temp" readonly="readonly"></td>
+		</tr>
+		<tr>
+			<td>습 도</td>
+			<td colspan="2"><input type="text" id="reh" readonly="readonly"></td>
+		</tr>
+		<tr>
+			<td>강수확률</td>
+			<td colspan="2"><input type="text" id="pop" readonly="readonly"></td>
+		</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
